@@ -78,14 +78,6 @@ top: 0; left: 5%;
 	width: 35%;
 	top: 45%;
 	left: 34%;
-	/*animation:;*/
-	/*-webkit-animation-delay: 1.8s;*/
-	/*-o-animation-delay: 1.8s;*/
-	/*-moz-animation-delay: 1.8s;*/
-	/*animation-delay: 1.8s;*/
-	/*-webkit-animation-delay: 1.8s;*/
-	/*-o-animation-delay: 1.8s;*/
-	/*-moz-animation-delay: 1.8s;*/
 }
 .page2-1{
 	position: absolute;
@@ -182,69 +174,45 @@ top: 0; left: 5%;
 }
 @keyframes moveTop {
 	0%{
-		/*transform:translate(12%,14%);*/
-		/*-webkit-transform:translate(12%,14%);*/
 		top:14%;
 	}
 	50%{
-		/*transform:translate(12%,7%);*/
-		/*-webkit-transform:translate(12%,7%);*/
 		top:11%;
 	}
 	100%{
-		/*transform:translate(12%,14%);*/
-		/*-webkit-transform:translate(12%,14%);*/
 		top:14%;
 	}
 }
 @-moz-keyframes moveTop {
 	0%{
-		/*transform:translate(12%,14%);*/
-		/*-webkit-transform:translate(12%,14%);*/
 		top:14%;
 	}
 	50%{
-		/*transform:translate(12%,7%);*/
-		/*-webkit-transform:translate(12%,7%);*/
 		top:11%;
 	}
 	100%{
-		/*transform:translate(12%,14%);*/
-		/*-webkit-transform:translate(12%,14%);*/
 		top:14%;
 	}
 }
 @-webkit-keyframes moveTop {
 	0%{
-		/*transform:translate(12%,14%);*/
-		/*-webkit-transform:translate(12%,14%);*/
 		top:14%;
 	}
 	50%{
-		/*transform:translate(12%,7%);*/
-		/*-webkit-transform:translate(12%,7%);*/
 		top:11%;
 	}
 	100%{
-		/*transform:translate(12%,14%);*/
-		/*-webkit-transform:translate(12%,14%);*/
 		top:14%;
 	}
 }
 @-o-keyframes  moveTop {
 	0%{
-		/*transform:translate(12%,14%);*/
-		/*-webkit-transform:translate(12%,14%);*/
 		top:14%;
 	}
 	50%{
-		/*transform:translate(12%,7%);*/
-		/*-webkit-transform:translate(12%,7%);*/
 		top:11%;
 	}
 	100%{
-		/*transform:translate(12%,14%);*/
-		/*-webkit-transform:translate(12%,14%);*/
 		top:14%;
 	}
 }
@@ -588,11 +556,7 @@ top: 0; left: 5%;
 	background-color: #fff;
 }
 .page7-2{
-	/*position: absolute;*/
 	width: 100%;
-	/*top: 29%;*/
-	/*left: 13%;*/
-	/*z-index: 444;*/
 	animation-delay: 0.8s;
 	-webkit-animation-delay: 0.8s;
 	-o-animation-delay: 0.8s;
@@ -677,14 +641,6 @@ top: 0; left: 5%;
 	z-index: 500;
 	visibility: hidden;
 }
-/*.music {*/
-	/*width: 30px;*/
-	/*height: 30px;*/
-	/*background:url("../img/music.png") no-repeat center center;*/
-	/*background-size: 100%;*/
-	/*opacity:0.7;*/
-	/*border-radius: 50%;*/
-/*}*/
 .play {
 	animation: r 1.2s linear infinite;
 	-webkit-animation: r 1.2s linear infinite;
@@ -748,12 +704,6 @@ top: 0; left: 5%;
 	50%  { opacity: 1;}
 	100% { opacity: 0;}
 }
-/*.music {
-	background: url(../images/music_02.png) no-repeat;
-	background-size: 100% auto;
-	-webkit-animation: btnRotate2 1.5s linear infinite;
-	animation: btnRotate2 1.5s linear infinite;
-}*/
 @-webkit-keyframes btnRotate1 {
 0% {
     -webkit-transform: rotateZ(0deg);
@@ -870,6 +820,7 @@ top: 0; left: 5%;
 		font-size:40px;
     }
 }
+/*飘花*/
 .leave {
 	position: fixed;
 	width: 25px;
@@ -1084,4 +1035,71 @@ top: 0; left: 5%;
 	100% {
 		transform: scale(-1,1) rotate(-50deg)
 	}
+}
+.flower1{
+	top: 30px;
+	right: 11px;
+	-webkit-animation-name: fade, drop;
+	animation-name: fade, drop;
+	-webkit-animation-duration: 3.53462632326409s, 3.53462632326409s;
+	animation-duration: 3.53462632326409s, 5.53462632326409s;
+}
+.flower1 img{
+	-webkit-animation-name: counterclockwiseSpinAndFlip;
+	animation-name: counterclockwiseSpinAndFlip;
+	-webkit-animation-duration: 6.41551980935037s;
+	animation-duration: 6.41551980935037s;
+}
+.flower2{
+	top: 30px;
+	right: 49px;
+	-webkit-animation-name: fade, drop;
+	animation-name: fade, drop;
+	-webkit-animation-duration: 7.69390273373574s, 7.69390273373574s;
+	animation-duration: 7.69390273373574s, 7.69390273373574s;
+}
+.flower2 img{
+	-webkit-animation-name:clockwiseSpin;
+	animation-name: clockwiseSpin;
+	-webkit-animation-duration: 4.43051331862807s;
+	animation-duration: 4.43051331862807s;
+}
+.flower3{
+	top: 30px; right: 30px;
+	-webkit-animation-name: fade, drop;
+	animation-name: fade, drop;
+	-webkit-animation-duration: 4.6820231950842s, 4.6820231950842s;
+	animation-duration: 4.6820231950842s,4.6820231950842s;
+}
+.flower3 img{
+	-webkit-animation-name: counterclockwiseSpinAndFlip;
+	animation-name:counterclockwiseSpinAndFlip;
+	-webkit-animation-duration: 5.74476881045848s;
+	animation-duration: 5.74476881045848s;
+}
+.flower4{
+	top: 30px;right: 38px;
+	-webkit-animation-name: fade, drop;
+	animation-name: fade, drop;
+	-webkit-animation-duration: 10.5191837195307s,10.5191837195307s;
+	animation-duration: 10.5191837195307s, 10.5191837195307s;
+}
+.flower4 img{
+	-webkit-animation-name: clockwiseSpin;
+	animation-name: clockwiseSpin;
+	-webkit-animation-duration: 4.83424495253712s;
+	animation-duration:4.83424495253712s;
+}
+.flower5{
+	top: 30px; right: 40px;
+	-webkit-animation-name:fade, drop;
+	animation-name: fade, drop;
+	-webkit-animation-duration: 5.21671609440818s,5.21671609440818s;
+	animation-duration:5.21671609440818s, 5.21671609440818s;
+}
+.flower5 img{
+	-webkit-animation-name:clockwiseSpin;
+	animation-name: clockwiseSpin;
+	-webkit-animation-duration: 5.20350679568946s;
+	animation-duration: 5.20350679568946s;
 }
